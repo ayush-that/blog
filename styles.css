@@ -13,7 +13,7 @@ header {
 
 main {
   margin: 20px auto;
-  width: 60%; /* Adju   st this to control the width of the main content area */
+  width: 60%; /* Adjust this to control the width of the main content area */
 }
 
 article {
@@ -43,4 +43,8 @@ b {
 a {
   color: inherit; /* This will make the links the same color as the surrounding text */
   text-decoration: none; /* This will remove the underline */
+}
+
+footer {
+  padding: 0px; /* adjust as needed */
 }
