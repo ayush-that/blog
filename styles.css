@@ -1,45 +1,46 @@
 body {
-    font-family: 'Hack', monospace;
-    font-size: 13.5px;
-    background-color: #1b1b1b;
-    color: #ffffff;
+  font-family: "Hack", monospace;
+  font-size: 14px;
+  background-color: #1b1b1b;
+  color: #ffffff;
 }
 
 header {
-    background-color: #2b2b2b;
-    padding: 20px;
-    text-align: center;
+  background-color: #2b2b2b;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
-    margin: 20px auto;
-    width: 60%; /* Adjust this to control the width of the main content area */
+  margin: 20px auto;
+  width: 60%; /* Adjust this to control the width of the main content area */
 }
 
 article {
-    margin-bottom: 20px;
-    text-align: left;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 footer {
-    background-color: #2b2b2b;
-    padding: 20px;
-    text-align: center;
+  background-color: #2b2b2b;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    color: #d86c1c;
+  color: #d86c1c;
 }
 
-strong, b {
-    color: #d8b48c;
+strong,
+b {
+  color: #d8b48c;
 }
 
 #table-of-contents {
-    color: #33bbff;
+  color: #33bbff;
 }
 
 a {
-    color: inherit; /* This will make the links the same color as the surrounding text */
-    text-decoration: none; /* This will remove the underline */
+  color: inherit; /* This will make the links the same color as the surrounding text */
+  text-decoration: none; /* This will remove the underline */
 }
