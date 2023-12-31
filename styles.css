@@ -74,3 +74,7 @@ footer {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+body {
+  cursor: url("./Images/cursor.png"), auto;
+}

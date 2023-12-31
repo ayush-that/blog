@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Year End Review 📅</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../images/icons/wind-face.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Year End Review 📅</h1>
+    </header>
+
+    <style>
+      /* customizable snowflake styling */
+      .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #000;
+      }
+
+      .snowflake,
+      .snowflake .inner {
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+      @keyframes snowflakes-fall {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(110vh);
+        }
+      }
+      @keyframes snowflakes-shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(80px);
+        }
+      }
+      .snowflake {
+        position: fixed;
+        top: -10%;
+        z-index: 9999;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: default;
+        animation-name: snowflakes-shake;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+      }
+      .snowflake .inner {
+        animation-duration: 10s;
+        animation-name: snowflakes-fall;
+        animation-timing-function: linear;
+      }
+      .snowflake:nth-of-type(0) {
+        left: 1%;
+        animation-delay: 0s;
+      }
+      .snowflake:nth-of-type(0) .inner {
+        animation-delay: 0s;
+      }
+      .snowflake:first-of-type {
+        left: 10%;
+        animation-delay: 1s;
+      }
+      .snowflake:first-of-type .inner,
+      .snowflake:nth-of-type(8) .inner {
+        animation-delay: 1s;
+      }
+      .snowflake:nth-of-type(2) {
+        left: 20%;
+        animation-delay: 0.5s;
+      }
+      .snowflake:nth-of-type(2) .inner,
+      .snowflake:nth-of-type(6) .inner {
+        animation-delay: 6s;
+      }
+      .snowflake:nth-of-type(3) {
+        left: 30%;
+        animation-delay: 2s;
+      }
+      .snowflake:nth-of-type(11) .inner,
+      .snowflake:nth-of-type(3) .inner {
+        animation-delay: 4s;
+      }
+      .snowflake:nth-of-type(4) {
+        left: 40%;
+        animation-delay: 2s;
+      }
+      .snowflake:nth-of-type(10) .inner,
+      .snowflake:nth-of-type(4) .inner {
+        animation-delay: 2s;
+      }
+      .snowflake:nth-of-type(5) {
+        left: 50%;
+        animation-delay: 3s;
+      }
+      .snowflake:nth-of-type(5) .inner {
+        animation-delay: 8s;
+      }
+      .snowflake:nth-of-type(6) {
+        left: 60%;
+        animation-delay: 2s;
+      }
+      .snowflake:nth-of-type(7) {
+        left: 70%;
+        animation-delay: 1s;
+      }
+      .snowflake:nth-of-type(7) .inner {
+        animation-delay: 2.5s;
+      }
+      .snowflake:nth-of-type(8) {
+        left: 80%;
+        animation-delay: 0s;
+      }
+      .snowflake:nth-of-type(9) {
+        left: 90%;
+        animation-delay: 1.5s;
+      }
+      .snowflake:nth-of-type(9) .inner {
+        animation-delay: 3s;
+      }
+      .snowflake:nth-of-type(10) {
+        left: 25%;
+        animation-delay: 0s;
+      }
+      .snowflake:nth-of-type(11) {
+        left: 65%;
+        animation-delay: 2.5s;
+      }
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <center>
+          <i
+            >New Year's resolutions are for the losers. We grind every day,
+            fueled by relentless ambition and unwavering commitment. No
+            resolutions, just domination. ~ Neeraj Walia (ezSnippet)</i
+          >
+        </center>
+
+        <div id="table-of-contents">
+          <h2>Table of Contents</h2>
+          <ul>
+            <li><a href="#foreword">Foreword</a></li>
+
+            <li>
+              <a href="#the-experiences-and-the-lessons-learned"
+                >The experiences & the lessons learned</a
+              >
+            </li>
+            <li><a href="#the-goodies">The Goodies</a></li>
+            <li>
+              <a href="#my-failures">My Failures</a>
+            </li>
+            <li><a href="#relationships">Relationships</a></li>
+            <li>
+              <a href="#how-does-1-jan-2023-ayush-compare-to-1-jan-2024-ayush"
+                >How does 1 Jan 2023 Ayush compare to 1 Jan 2024 Ayush?</a
+              >
+            </li>
+            <li>
+              <a href="#2024">2024?</a>
+            </li>
+            <li><a href="#afterword">Afterword</a></li>
+          </ul>
+        </div>
+        <b id="foreword">Foreword:</b>
+
+        <img
+          class="blog-image"
+          src="../Images/blog/pxfuel.png"
+          alt="Anime Girl"
+          style="width: 25%; float: left; margin-right: 10px"
+        />
+        <p>
+          First of all, I am not too fond of celebrating the new year. For a
+          Virat Hindu (pun intended) like me, my new year is on the first day of
+          Chaitra. But I do get invited to a New Year's Eve celebration every
+          year and I take it gracefully.
+        </p>
+
+        <p>
+          As I am a person with a very short memory retention power, it is
+          quintessential to write down how my year went or else I will forget it
+          just like I have forgotten the previous twenty or so.
+        </p>
+
+        <p>
+          The process of foregtting has already begun and so this blog does not
+          represent everything that has happened to me this year, it only has
+          the things that I still remember.
+        </p>
+
+        <p>
+          So here I go, writing about what I went through this year, the lessons
+          I learned, the Ws I snatched, the Ls I took, the changes I saw in
+          myself in these 365 days, and finally what I want my 2024 to be like!
+        </p>
+
+        <b id="the-experiences-and-the-lessons-learned"
+          >The experiences & the lessons learned:</b
+        >
+        <div style="display: flex; justify-content: center">
+          <img
+            class="blog-image"
+            src="../Images/blog/ncc-nameplate.jpeg"
+            alt="Sealdah Station"
+            style="width: 25%; margin-right: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/train.jpg"
+            alt="Sealdah Station"
+            style="width: 25%; margin-right: 10px"
+          />
+        </div>
+        <p>
+          The best experience I’ve had this year was at NCC. I simply belong
+          there. It provides me with a platform to meet some amazing people, fly
+          planes, fire weapons, and serve the nation. Every time I step into
+          that parade ground, I’m carrying a legacy with me.
+        </p>
+
+        <p>
+          The freshest experience I had this year was college. It took me 20
+          years to get there but honestly, it's worth it solely because of the
+          freedom of self-improvement that I get there. After, three years of
+          grinding, I can safely say it's worth it.
+        </p>
+
+        <p>
+          My first solo trip to Kolkata and my second solo trip to Prayagraj
+          were such a refreshing experience as well. I was so overwhelmed with
+          joy the moment Sealdah Rajdhani took off from NDLS.
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            class="blog-image"
+            src="../Images/blog/sealdah-station.jpg"
+            alt="Sealdah Station"
+            style="width: 25%; margin-right: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/victoria-memorial.jpg"
+            alt="Victoria Memorial"
+            style="width: 25%; margin-left: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/kolkata-bus.jpg"
+            alt="Victoria Memorial"
+            style="width: 25%; margin-left: 10px"
+          />
+        </div>
+        <p>
+          Standing at this railway station, a thousand miles away from home with
+          the task of finding food, shelter, and a companion for myself. I
+          learned to survive alone and make friends impromptu.
+        </p>
+
+        <b id="the-goodies">The Goodies:</b>
+
+        <p>
+          I got a chance to visit Bihar after six years. That place is my
+          motherland and every time I go there I come back motivated to do great
+          in life so I don’t have to go back there.
+        </p>
+
+        <p>
+          I started to grow an online presence. It will take a lot of time and
+          effort but I’m glad I’ve finally started using the internet for a good
+          cause. I got rid of my Reddit/ib use as well.
+        </p>
+
+        <p>
+          I got my first phone gifted by my sister, my first TWS which I bought
+          with my own money. It feels great buying books, snacks, accessories
+          heck even a toffee when it's your money.
+        </p>
+
+        <p>
+          Getting my first internship was a great thing that happened this year.
+          It taught me why not to do internships and stick to freelancing.
+        </p>
+
+        <p>
+          I got the chance to attend numerous events and all of them were
+          amazing. Met new people, learned new things, and ate some amazing
+          food. Also, I experienced a 5☆ hotel.
+        </p>
+
+        <div style="display: flex; justify-content: center">
+          <img
+            class="blog-image"
+            src="../Images/blog/Screenshot_20230212_030327.png"
+            alt="Sealdah Station"
+            style="width: 40%; margin-right: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/Screenshot_20230411_151521.png"
+            alt="Sealdah Station"
+            style="width: 40%; margin-right: 10px"
+          />
+        </div>
+
+        <p>
+          I started my liberation process; and created a personal site and a
+          personal blog as well. I stuck to using free software and Linux.
+        </p>
+
+        <b id="my-failures">My Failures:</b>
+
+        <p>
+          I failed JEE for the 3rd and 4th time. This was when I had given my
+          100% to the preparation. I’m just not made for meme exams I reckon.
+        </p>
+
+        <p>
+          I failed to retain academic knowledge. It’s like I remember nothing
+          after an exam is over and the next time I have to start from the
+          basics.
+        </p>
+
+        <p>
+          I missed all the opportunities to meet my old and true school friends.
+          It’s been 1.5 years and I miss all of them a lot.
+        </p>
+
+        <p>
+          I failed to make it past the screening stage in two SSB interviews.
+          The second time had me in tears. With no more attempts left, I have
+          plenty of time to prepare before facing anymore.
+        </p>
+
+        <b id="relationships">Relationships:</b>
+
+        <div style="display: flex; justify-content: center">
+          <img
+            class="blog-image"
+            src="../Images/blog/parrot1.jpg"
+            alt="Victoria Memorial"
+            style="width: 25%; margin-left: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/parrot2.jpg"
+            alt="Victoria Memorial"
+            style="width: 25%; margin-left: 10px"
+          />
+          <img
+            class="blog-image"
+            src="../Images/blog/parrot3.jpg"
+            alt="Victoria Memorial"
+            style="width: 25%; margin-left: 10px"
+          />
+        </div>
+
+        <p>
+          I lost my greatest companion, my truest love, LMAO. I cried a lot when
+          he left us. I hope wherever he is, he is happy and free. I miss him a
+          lot.
+        </p>
+        <p>
+          I’d say, the relation-building has been satisfying. From zero friends
+          made last year to three this year, I’d say this is good progress. I
+          made goal buddies and meaningful acquaintances as well.
+        </p>
+
+        <p>
+          Even for family relationships, it has been better. I talked with my
+          uncles and older elders. The only bad thing is that I don’t have the
+          privilege of my sister’s in-person company anymore.
+        </p>
+
+        <b id="how-does-1-jan-2023-ayush-compare-to-1-jan-2024-ayush">
+          How does 1 Jan 2023 Ayush compare to 1 Jan 2024 Ayush?:</b
+        >
+
+        <p>
+          The most noticeable change is my looks. I lost more weight and
+          transformed from a hairy bear to a short-haired, clean-shaven human
+          being. I’d like to keep this look.
+        </p>
+        <img
+          class="blog-image"
+          src="../Images/blog/2ggu6ki638f41.jpg"
+          alt="Peace was never an option"
+          style="
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+          "
+        />
+        <p>
+          I care a lot less about what other people think about me now and that
+          comes with being more bad-mouth with people.
+        </p>
+
+        <b id="2024">2024?:</b>
+
+        <p>
+          I want to start investing. My money has been rotting in the bank for
+          so long but no more. I will learn more about growing money and track
+          my finances as well.
+        </p>
+
+        <p>
+          I want to run a marathon and attend as many camps as I can (if I don’t
+          get kicked from NCC lol). Also, I want to stop this anxiety-shivering.
+        </p>
+
+        <p>
+          I want to buy a laptop, sticker bomb it with hundreds of stickers, and
+          make a home server out of the Raspberry Pi 3.
+        </p>
+        <b id="afterword">Afterword:</b><br /><br />
+        <img
+          class="blog-image"
+          src="../Images/blog/pepe-hug.png"
+          alt="Anime Girl"
+          style="width: 15%; float: left; margin-right: 10px"
+        />
+        <p>
+          I believe that neither the journey nor the destination matters. The
+          only thing that matters is the people with whom you were during that
+          journey.
+        </p>
+
+        <p>
+          I’m grateful to everyone who invested even a blink of their time in
+          me. It means a lot.
+        </p>
+
+        <p>
+          Thanks for Reading!<br />
+          Have a Nice Day :)
+        </p>
+      </article>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>
