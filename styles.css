@@ -4,7 +4,7 @@ body {
   background-color: #1b1b1b;
   line-height: 1.7;
   cursor: url("./Images/cursor.png"), auto;
-  zoom: 100%;
+  zoom: 90%;
 }
 
 main {
@@ -123,5 +123,6 @@ blockquote {
   main {
     margin: auto;
     width: 95%; /* Adjust this to control the width of the main content area */
+    zoom: 100%;
   }
 }
