@@ -7,37 +7,26 @@ body {
   zoom: 90%;
 }
 
-header {
-  padding: 20px;
-  text-align: center;
-}
-
 main {
   margin: 20px auto;
   width: 60%; /* Adjust this to control the width of the main content area */
-}
-
-article {
-  margin-bottom: 20px;
-  text-align: left;
 }
 
 footer {
   padding: 5px;
   text-align: center;
   font-size: 0.85em;
-  width: 500px;
+  width: auto;
   margin: 20px auto;
   padding-top: 10px;
-  font-size: 0.85em;
   border-top: 1px solid #ffffff;
 }
 
 header {
   padding: 5px;
   text-align: center;
-  width: 500px;
-  margin: auto;
+  width: auto;
+  margin: 20px auto;
   padding-top: 10px;
   border-bottom: 1px solid #ffffff;
 }
@@ -130,10 +119,9 @@ blockquote {
   border-color: #cb4b16;
 }
 
-@media screen and (max-width: 600px)
-{
+@media screen and (max-width: 600px) {
   main {
-  margin: auto;
-  width: 95%; /* Adjust this to control the width of the main content area */
-}
+    margin: auto;
+    width: 95%; /* Adjust this to control the width of the main content area */
+  }
 }
