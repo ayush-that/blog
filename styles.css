@@ -1,10 +1,9 @@
 body {
   font-family: Verdana, Sans-Serif;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #1b1b1b;
   line-height: 1.7;
   cursor: url("./Images/cursor.png"), auto;
-  zoom: 90%;
 }
 
 main {
@@ -19,6 +18,7 @@ footer {
   width: auto;
   margin: 20px auto;
   padding-top: 10px;
+  font-size: 0.85em;
   border-top: 1px solid #ffffff;
 }
 
@@ -123,6 +123,5 @@ blockquote {
   main {
     margin: auto;
     width: 95%; /* Adjust this to control the width of the main content area */
-    zoom: 100%;
   }
 }
