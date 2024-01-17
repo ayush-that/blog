@@ -3,109 +3,41 @@
   <head>
     <title>Welcome!</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="icon" type="image/x-icon" href="./images/icons/thought-balloon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/icons/thought-balloon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
   </head>
   <body>
-    <header>
-      <h1>ayush's useless blogs</h1>
-    </header>
+    <div id="header"></div>
     <main>
+      <div id="snowflake"></div>
+      <h2><b>ABOUT ME:</b></h2>
+      Hello Stranger!,<br />
+      My name is Ayush Kumar Singh. I am an 18-year-old boy from Delhi, India.
+      <p>
+        I enjoy coding, reading, watching horror movies, listening to music, and
+        going for runs until I'm exhausted.
+      </p>
+      <p>
+        Writing these blog posts allows me to communicate my thoughts and
+        opinions. I hope you find them engaging and thought-provoking.
+      </p>
+      <div id="bloglist"></div>
 
+      <div id="socials"></div>
+      <div id="shoutouts"></div>
+      <div id="testimonial"></div>
 
-<style>
-/* customizable snowflake styling */
-.snowflake {
-  color: #fff;
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
-}
-
-.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
-</style>
-<div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-</div>
-
-        <h2><b>ABOUT ME:</b></h2>
-        Hello Stranger!,<br>
-        My name is Ayush Kumar Singh. I am an 18-year-old boy from Delhi, India.
-
-        <p>I enjoy coding, reading, watching horror movies, listening to music, and going for runs until I'm exhausted.</p>
-
-        <p>Writing these blog posts allows me to communicate my thoughts and opinions. I hope you find them engaging and thought-provoking.</p>
-
-        <h2><b>MY BLOGS:</b></h2>
-        <ul>
-        <li><a href="./blogs/year-end-review-2023.html">[Dec 31, 2023] - Year End Review 📅</a></li>
-        <li><a href="./blogs/how-ai-is-transforming-the-world.html">[Sep 25, 2023] - How is AI transforming the world? 🤖</a></li>
-        <li><a href="./blogs/omg-cricket.html">[Sep 12, 2023] - OMG Cricket [🏏→🚽]</a></li>
-        </ul>
-
-        <h2><b>MY SOCIALS:</b></h2>
-        <p><a href="https://www.linkedin.com/in/ayush-that/" target="_top">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABHpJREFUaEPtmm1MW1UYx/+npZS1bjpZydxgU5zQDQIMCDQFfAkfdAuaLGZ+EM3cItSpbMkUwagxW+YHnQFlc5k4p5vbcGoWU+ZLHFnE6GiZg2VsOCYQlU1wjG7QFeja3mNOtRjoPb2YdPTU+HxoP5xz29/vPvee85xzL8HfsaTiS63a7bMQgkcppHQCog+0ifBNQV0EqjMAPeCNjanv3r7SzbgI+0h5qnGhSpK+ACGZIsAqMVDQU5SoSs7vevAiYWc+xu2xRwt8QI5J+GI1JpJa3riBEPq2krWQ7YRWkKVlVjtVIU9IQAUoCbCR1HKrkxDcNLWvihCsMifhofxEJM3Twe2R0N7rwPvf9KCn3ymEL6W4RowWK5WDrynLwf3ZtwWBjnt8sGy3o/X8kBASsgIleQuxbV02F7Dv8igeeOUYJBrkPuNSsgLs7K/IWRASZtVrzTjXNzLjwFP/UFbgvQ0mFC4zhIRb+1YLbOcuiylQvToNa4qTuXDs0rm3ugmDw+NiCiwy6PH5y/dgllYtC3j4eB9e2ncq4vD+UkJuFGINptR5eGPdchhujpsAZfdsY+sFvLr/NNhoJEJwBRicVqOCyWhAYrwOLrcXbd0O/DboEoF7giGkgFCkHJj/psAcnQbGxDncBDjHvPipb3hSe8btt0A/S8M95uyvVzEy6vG3x8aoUJw1H2ajAYsT9NDFxcA56sFFx6h/aG7uuATn2F99lUI2A2wOYHMBL9p6HCjd9sOk5kPVRWASvFhTc9xffhSlJWDLY5mYP/efwWHqMcMuD+q//hkfNvUqzvbhE6gqRMYdc0MKJBn02FyaAbXKv45SjKPt/ajc0+YvJHkxYwI7jnRh/cqUacMHgBuaf8GWho4bL9DwQiGykvkZ8En0X8MHqNfWtsDWJV+2hC0DSgKK10uIDt93DqKszibbI2wCBysLsPzOWxU5vT4Jtq4h9PY7wUa7ovQExM/WhjyOVQD3vXgUf1wNrr3CJnCgsgDZCgI9A9ewcdcJsO9A6ONiUPNkDu5OTwgpsWn3SXz14+9BfcImsP/5AuQs4WfANe5FyeZvMXBlLAhitk6Dpq3F/ozwgg2pr392NnICbC395uFOLuDWxzPxcMEibrvVfgFVH7RHTuCZnSdw7PQAf54oTgZbh/DiuzOXYNlhv3ECHz1nRu5d8VyAJ2pbYOcMheygFbkL/PcCL9gszmbzqRG2e0BJIFBK8ADZTfzus/mRE9i7yYy8FH4GhBeI+gwoDaPCZ+B/gUjfxEqlhPCXkFIxJ7yAUjktvMDHVYXIVFhShtqSj/hEdmgaa2KxBaa5KzEjpQTbF62z5HLrkvbeK0GV4Z6NJqQt5m+rPL2zFSe7HdzfNC81oLaMX8yxrZz177ROr5hTXBcK1IH7kE8gRj4KpSPR/5jVaLFWAKiLijMetJqhFf5XDdTXPTYCkhVNEuxVA7XDnT/xsgeh0pFokZj0skfgrC9b/UmsFK8tlygpJRTpck/vI5kh9lQeROoghBxUDbnrOz995Drj+RNHJNOUlA7b7wAAAABJRU5ErkJggg==" alt="LinkedIn" width="24" height="24">
-
-        <a href="https://twitter.com/ayushdotpro" target="_top">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABBNJREFUaEPtWltsU3UY//1Pe9qu3brswmCsG3EOGAKaDHBc1BgBSYw+GJg+kZj4YJREJSbCA8HEPYCJirz4ZEwICRrwljgzrgoPxLksmcpFdBOM0FEHKVu3Xs9p/+Y7W2XARr9/u4FNzpf0qd/t993/yRFtB6VLiBvtEtgMgVoUAUmJAWjYL9IVO8WmL8O7hcS2IvD7DhelwHui7VB4oFgiP0mQQ6Lti7AsxuhnfbYB3O/s2RmwM1BgBOwSKjCABYvbGeCGsLJEw3Pz3WipdaHaqyFhSFwcMvH9Xyl0XUlh4jZtrnaiL2wincmtnZ2BCo+GlQEdnf3J3Fpv41hWq+ONR33wOMWksr0hA5+fi2PxLB2rAjquxTL46Kcoyw4bwMZmD15YXIJPemM4dpEPYkGVE+88UQZdY/mDf6IZ7PghgqghYU5nBra2+rAq4LK8+OpCAgfPx5FhXFG7nvLjwQoHy/tIUuLYpSRm+zScHaTyyh0odga2rS4FlUKWfrtu4uOeqBWxqSjgd+DD9X6W8xOZDv+ZxKc/x1hybAAvPeLFM03uW5QaGaCzP4GOviSGEncCWR1w4c1WH8sRYqKEfnY2jm9+T7Bl2AAWVjnR/mTZpIoJSHcwha6ggV8HDcSNsdpaU++ympdLI0mJlzuGuOwWHxsAMb+10ofWurE+mIqkBIIjaYSiGWgCaJlzs+xyeRYazeD1I8O52G75nw1gxVwdfw+n8dpyHxZVO5WMcJkvXDex89QIl10tA2+PNzHVOu2EmaAfr6Swhzn/s/bZGaAGpkaeSdr3SwzfKS5KNgCvLrB3QznK3ZNv0+kAtvVoxOofFWIDIKVLa3RsX1PK3qoqjtD5sKVTrYGVpxAJ0Gnw6jIv6sp425ULYv+ZOL79gz//lXsgK9BU6URdmYbHG1xWRqajoGj+bzk8jITJuE1ui4hSCZFsvd+B99f5IabD83FnaPt+rbB9J2JQBkDCLz5Ugo2LPNzquCvf5Uga209EQNs8H8oLABl6fqHHAuFy5J8KKpkdJ0esBZkv5Q2ADNJCW9foxoJKBx6erdYP9Nr6oGsUPVeNfH1X28RTWaGmfqXFi3nl/KlkpCX2dkfRPVCY83mNURLy6QJLanQ83ejG0hq1u4jmPZ0L/WGzoMgrjVE63tY+4La2MD3OaQfQpalCVDLHLyVx4Fz8v3NbRX4qXnYPVJVoeHa+G481jAHhUsyQOH05hY6+BK6O5jlq7mKMDSCrw6EBS2bpaK5yoqnSgRqfhlIX/QRiKWk9xkPRtDVZzgyaOH/NRDKtvqC4AVIGwFV8r/hsAPcq0gU38f121AZgZ2CGImBPoRkKLFut2HQoHBQCc9kS/y/GYFF/7AFgt6DPbaTjxrvIYHOxZGLi5zb/AvhFuuq9yIdrAAAAAElFTkSuQmCC" alt="Twitter" width="24" height="24">
-
-        <a href="https://www.instagram.com/fitlesshot/" target="_top">
-        <img src="data:image/png;base64,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" alt="Instagram" width="24" height="24">
-
-
-
-                <h2><b>SHOUTOUTS:</b></h2>
-                  <a href="https://ayush.pro/" target="_top">
-    <img
-      src="https://ayush-that.neocities.org/button.png"
-      width="88"
-      height="31"
-  /></a>
-                    <a href="https://aadi.net.in/" target="_top">
-    <img
-      src="https://aadi.net.in/88x31.png"
-      width="88"
-      height="31"
-  /></a>
+      <div id="footer"></div>
     </main>
-    <div id="footer"></div>
   </body>
 </html>

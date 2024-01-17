@@ -9,263 +9,103 @@
   </head>
   <body>
     <header>
+      <div id="header"></div>
       <h1>OMG Cricket [🏏→🚽]</h1>
     </header>
+    <div id="snowflake"></div>
+
     <main>
-      <style>
-        /* customizable snowflake styling */
-        .snowflake {
-          color: #fff;
-          font-size: 1em;
-          font-family: Arial, sans-serif;
-          text-shadow: 0 0 5px #000;
-        }
+      <p class="meta">Posted on <span class="postdate">12-09-2023</span></p>
 
-        .snowflake,
-        .snowflake .inner {
-          animation-iteration-count: infinite;
-          animation-play-state: running;
-        }
-        @keyframes snowflakes-fall {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(110vh);
-          }
-        }
-        @keyframes snowflakes-shake {
-          0%,
-          100% {
-            transform: translateX(0);
-          }
-          50% {
-            transform: translateX(80px);
-          }
-        }
-        .snowflake {
-          position: fixed;
-          top: -10%;
-          z-index: 9999;
-          -webkit-user-select: none;
-          user-select: none;
-          cursor: default;
-          animation-name: snowflakes-shake;
-          animation-duration: 3s;
-          animation-timing-function: ease-in-out;
-        }
-        .snowflake .inner {
-          animation-duration: 10s;
-          animation-name: snowflakes-fall;
-          animation-timing-function: linear;
-        }
-        .snowflake:nth-of-type(0) {
-          left: 1%;
-          animation-delay: 0s;
-        }
-        .snowflake:nth-of-type(0) .inner {
-          animation-delay: 0s;
-        }
-        .snowflake:first-of-type {
-          left: 10%;
-          animation-delay: 1s;
-        }
-        .snowflake:first-of-type .inner,
-        .snowflake:nth-of-type(8) .inner {
-          animation-delay: 1s;
-        }
-        .snowflake:nth-of-type(2) {
-          left: 20%;
-          animation-delay: 0.5s;
-        }
-        .snowflake:nth-of-type(2) .inner,
-        .snowflake:nth-of-type(6) .inner {
-          animation-delay: 6s;
-        }
-        .snowflake:nth-of-type(3) {
-          left: 30%;
-          animation-delay: 2s;
-        }
-        .snowflake:nth-of-type(11) .inner,
-        .snowflake:nth-of-type(3) .inner {
-          animation-delay: 4s;
-        }
-        .snowflake:nth-of-type(4) {
-          left: 40%;
-          animation-delay: 2s;
-        }
-        .snowflake:nth-of-type(10) .inner,
-        .snowflake:nth-of-type(4) .inner {
-          animation-delay: 2s;
-        }
-        .snowflake:nth-of-type(5) {
-          left: 50%;
-          animation-delay: 3s;
-        }
-        .snowflake:nth-of-type(5) .inner {
-          animation-delay: 8s;
-        }
-        .snowflake:nth-of-type(6) {
-          left: 60%;
-          animation-delay: 2s;
-        }
-        .snowflake:nth-of-type(7) {
-          left: 70%;
-          animation-delay: 1s;
-        }
-        .snowflake:nth-of-type(7) .inner {
-          animation-delay: 2.5s;
-        }
-        .snowflake:nth-of-type(8) {
-          left: 80%;
-          animation-delay: 0s;
-        }
-        .snowflake:nth-of-type(9) {
-          left: 90%;
-          animation-delay: 1.5s;
-        }
-        .snowflake:nth-of-type(9) .inner {
-          animation-delay: 3s;
-        }
-        .snowflake:nth-of-type(10) {
-          left: 25%;
-          animation-delay: 0s;
-        }
-        .snowflake:nth-of-type(11) {
-          left: 65%;
-          animation-delay: 2.5s;
-        }
-      </style>
-      <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-        <div class="snowflake">
-          <div class="inner">❅</div>
-        </div>
-      </div>
+      <h3>
+        <b
+          >Following cricket is not only a waste of time; it's outright
+          foolish.</b
+        >
+      </h3>
+      <p>
+        <img
+          class="blog-image"
+          src="../Images/blog/omg-cricket.avif"
+          alt="Description of the image"
+        />
+      </p>
+      <p>
+        Cricket is a sport that is deeply embedded in the hearts of Indians.
+        But, is the time and energy invested in watching and playing cricket
+        truly justified? Let's See.
+      </p>
 
-      <article>
-        <h2>
-          <b
-            >Following cricket is not only a waste of time; it's outright
-            foolish.</b
-          >
-        </h2>
-        <p>
-          <img
-            class="blog-image"
-            src="../Images/blog/omg-cricket.avif"
-            alt="Description of the image"
-          />
-        </p>
-        <p>
-          Cricket is a sport that is deeply embedded in the hearts of Indians.
-          But, is the time and energy invested in watching and playing cricket
-          truly justified? Let's See.
-        </p>
+      <p>
+        Cricket maintains a stronghold in the Indian subcontinent. Here, the
+        cricket players are revered to an almost divine status. It lacks
+        popularity in more developed countries like United States, Canada, and
+        European nations. These countries developed their own sporting culture
+        rather than embracing the remnants of colonial influence.
+      </p>
 
-        <p>
-          Cricket maintains a stronghold in the Indian subcontinent. Here, the
-          cricket players are revered to an almost divine status. It lacks
-          popularity in more developed countries like United States, Canada, and
-          European nations. These countries developed their own sporting culture
-          rather than embracing the remnants of colonial influence.
-        </p>
+      <p>
+        One must ask, what value does watching cricket add to one's life?
+        Cricket matches are notoriously lengthy, extending from six hours to
+        five days. This drains enormous commitment of time and energy for the
+        viewer. Compare this to the sports like hockey or football, they offer
+        thrilling matches that conclude within an hour or so. The disparity in
+        value for time spent is evident.
+      </p>
 
-        <p>
-          One must ask, what value does watching cricket add to one's life?
-          Cricket matches are notoriously lengthy, extending from six hours to
-          five days. This drains enormous commitment of time and energy for the
-          viewer. Compare this to the sports like hockey or football, they offer
-          thrilling matches that conclude within an hour or so. The disparity in
-          value for time spent is evident.
-        </p>
+      <p>
+        Recently(written on 12 Sept, 2023), An India-Pakistan match took place
+        in the Asia Cup. That match was delayed by an entire day due to
+        rainfall. This single match effectively consumed two days of the
+        country's attention and energy, all in the name of a rivalry that has
+        been perpetuated for far too long. Many such matches have happened in
+        the past and surely will continue to happen in the future. But this Us
+        vs. them mentality with Pakistan, when will this end?
+      </p>
 
-        <p>
-          Recently(written on 12 Sept, 2023), An India-Pakistan match took place
-          in the Asia Cup. That match was delayed by an entire day due to
-          rainfall. This single match effectively consumed two days of the
-          country's attention and energy, all in the name of a rivalry that has
-          been perpetuated for far too long. Many such matches have happened in
-          the past and surely will continue to happen in the future. But this Us
-          vs. them mentality with Pakistan, when will this end?
-        </p>
+      <p>
+        We are a country with over 1.4 billion population. Our inability to
+        secure medals at the Olympics is disheartening. Our unwavering focus on
+        cricket is hindering the growth of other sports. At the Olympics,
+        Smaller nations consistently outshine us in terms of gold medal count.
+      </p>
 
-        <p>
-          We are a country with over 1.4 billion population. Our inability to
-          secure medals at the Olympics is disheartening. Our unwavering focus
-          on cricket is hindering the growth of other sports. At the Olympics,
-          Smaller nations consistently outshine us in terms of gold medal count.
-        </p>
+      <p>
+        From a player's perspective - With only two players batting at a time
+        and fielders maintaining static positions, the game lacks the constant
+        movement and engagement found in other outdoor sports. This raises
+        concerns about whether we are truly maximizing our physical potential by
+        dedicating our time and energy to cricket.
+      </p>
 
-        <p>
-          From a player's perspective - With only two players batting at a time
-          and fielders maintaining static positions, the game lacks the constant
-          movement and engagement found in other outdoor sports. This raises
-          concerns about whether we are truly maximizing our physical potential
-          by dedicating our time and energy to cricket.
-        </p>
+      <p>
+        Cricket's dominance in India extends only to the men's team. The neglect
+        of the women's team is disappointing. They lack the viewership,
+        sponsorship pay, reputation, and influence enjoyed by their male
+        counterparts.
+      </p>
 
-        <p>
-          Cricket's dominance in India extends only to the men's team. The
-          neglect of the women's team is disappointing. They lack the
-          viewership, sponsorship pay, reputation, and influence enjoyed by
-          their male counterparts.
-        </p>
+      <p>
+        The elimination of cricket as the primary sport of the country is an
+        essential step in the process of removing colonial marks. How can we
+        rename monuments and roads named after colonizers while simultaneously
+        embracing their sporting legacy?
+      </p>
 
-        <p>
-          The elimination of cricket as the primary sport of the country is an
-          essential step in the process of removing colonial marks. How can we
-          rename monuments and roads named after colonizers while simultaneously
-          embracing their sporting legacy?
-        </p>
+      <p>
+        As a kid, I was always advised not to watch cricket by my elders. While
+        the players' bank accounts swell, the watchers, who form the backbone of
+        the sport, remain largely unchanged, their lives untouched by the
+        glamour and wealth that surrounds the game they love.
+      </p>
 
-        <p>
-          As a kid, I was always advised not to watch cricket by my elders.
-          While the players' bank accounts swell, the watchers, who form the
-          backbone of the sport, remain largely unchanged, their lives untouched
-          by the glamour and wealth that surrounds the game they love.
-        </p>
-
-        <p>
-          Our nation's progress lies in diversifying our sporting interests and
-          nurturing talent across various disciplines. It's time to break free
-          from the chains of colonial ideologies, explore other avenues, and
-          ensure that our investments of time and energy truly enrich our lives
-          and contribute to our nation's success.
-        </p>
-      </article>
+      <p>
+        Our nation's progress lies in diversifying our sporting interests and
+        nurturing talent across various disciplines. It's time to break free
+        from the chains of colonial ideologies, explore other avenues, and
+        ensure that our investments of time and energy truly enrich our lives
+        and contribute to our nation's success.
+      </p>
     </main>
     <div id="footer"></div>
   </body>
