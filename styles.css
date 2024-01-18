@@ -124,4 +124,7 @@ blockquote {
     margin: auto;
     width: 95%; /* Adjust this to control the width of the main content area */
   }
+  body {
+  font-size: 15px;
+  }
 }
