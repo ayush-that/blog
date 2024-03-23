@@ -1,0 +1,19 @@
+name: Push to S3
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AKIA5FTY6LHICWVN7UPZ }}
+          aws-secret-access-key: ${{ secrets.v5ssOtIagM7Oo+ulUM94WAUj7PpVW9OC2ocZhREa }}
+          aws-region: us-east-1
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync build s3://my-bucket-name --delete
